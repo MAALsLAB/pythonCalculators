@@ -1,16 +1,13 @@
-#############################################################################
-########        This Program Calculates Number of Bits needed        ########
-########                Needed for a decimal Number                  ########
-########                                                             ########
-########            N = log2(decimal number)                         ########
-########            N = Number of bits                               ########
-#############################################################################
+# This Program Calculates Number of Bits needed
+# Needed for a decimal Number
+# N = log2(decimal number)
+# Where N = Number of bits
 import math
 
 D_number = input('Decimal number value = ')
 
 if D_number.isnumeric():
-    D_number = int(D_number) # Convert to int
+    D_number = int(D_number)  # Convert to int
 elif '.' in D_number:
     D_number = float(D_number)
 else:
